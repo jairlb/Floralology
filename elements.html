@@ -1,0 +1,347 @@
+<!-- Name:  Jair Bacaycay
+     Due:   08/04/16
+     Class: MAT 125
+     Homework: Project3
+     File:  elements    -->
+<!-- Page Description: index: floralology elements page  -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Cinzel+Decorative'>
+		<title>Floralology - Elements</title>
+		<link rel = "stylesheet"
+		 type = "text/css"
+		 href = "styles.css">
+		 <style type="text/css">
+
+     #elements {
+       width: 950px;
+       margin: 10px auto 0 auto; }
+
+     tr.odd {background: rgba(192, 192, 192, 0.5); }
+
+     </style>
+
+		 <script language="javascript">
+					<!--
+
+					// Copyright 2006-2007 javascript-array.com
+					var timeout = 500;
+					var closetimer = 0;
+					var ddmenuitem = 0;
+
+					// open hidden layer
+					function mopen(id)
+					{
+						// cancel close timer
+						mcancelclosetime();
+
+						// close old layer
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+						// get new layer and show it
+						ddmenuitem = document.getElementById(id);
+						ddmenuitem.style.visibility = 'visible';
+					}
+
+					// close showed layer
+					function mclose()
+					{
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+					}
+
+					// go close timer
+					function mclosetime()
+					{
+						closetimer = window.setTimeout(mclose, timeout);
+					}
+
+					// cancel close timer
+					function mcancelclosetime()
+					{
+						if(closetimer)
+						{
+							window.clearTimeout(closetimer);
+							closetimer = null;
+						}
+					}
+
+					// close layer when click-out
+					document.onclick = mclose;
+					// Stop hiding -->
+			</script>
+	 </head>
+
+<body>
+
+<!-- Company Name & jump link on banner  -->
+<div id="banner">
+	<a href="index.html"><h1><em>Floralology</em></h1>
+	<p class="redfont">Artisan Florists</p></a>
+</div>
+
+<!-- Linking pages -->
+<ul id="ddm">
+	<table align="center" cellpadding="5" style="padding: 0;">
+	<td> <!-- not sure why <td> shows up as red in view source code -->
+		<li><a href="index.html">Home</a></li>
+		<li><a href="shop.html"
+	        onmouseover="mopen('m1')"
+	        onmouseout="mclosetime()">Shop</a>
+					<div id="m1"
+	          onmouseover="mcancelclosetime()"
+	          onmouseout="mclosetime()">
+	          <a href="classics.html">Classics</a>
+						<a href="emoting.html">Emoting</a>
+						<a href="wedding.html">Wedding</a>
+						<a href="custom.html">Custom</a>
+					</div>
+		</li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="elements.html"><span style="color: #da4646">Elements</span></a></li>
+	</td>
+	</table>
+</ul>
+
+<!-- Main Content -->
+<div id="wrapper">
+	<!-- floralology home headline -->
+	<h1 class="collectionbanner">Elements</h1>
+	<h2>Project 3 Revisions</h2>
+  <div id="special">
+    <p>Revisions include the addition of JavaScript, HTML5, CSS3, another page and
+		edits to the design. The revisions for Project 3 attempted to make the
+		site more akin to contemporary online shopping sites. Changes include making the margins and
+    padding more consistent, making headline fonts decorative, adding dropdown navigation,
+		the addition of an about us page, and another form was implemented throughout all
+		pages for the purpose of being a mock newsletter option. At the recommendation of
+    one of the Project 2 critiques, more self-promoting content in the footer was added.
+    Certain pictures, that seemed to mismatch the brand and design of the site were
+    also excluded. Since the contact page appeared to be a little sparse and less
+		consistent to the design theme, more standard contact information was added,
+		the layout was altered, and the form was spruced to be more monochromatic and
+		adhere to the site's theme. Also, hr elements were added in certain places to
+		section off certain content.</p>
+  </div>
+  <hr align="center" size="1" width="80%"	color=silver>
+
+  <div id="elements">
+    <table>
+      <tr>
+        <th align="left"><h3 class="redfont">Elements</h3></th>
+        <th align="left"><h3 class="redfont">Pages</h3></th>
+      </tr>
+      <!-- formatting tags -->
+      <tr class="odd">
+        <td>Formatting Tags<br>(Ex. 1 & 3)</td>
+      <td>
+        <ul>
+          <li><span style="color: black">All Pages</span></li>
+        </ul>
+      </td>
+      </tr>
+      <!-- text sytles and lists -->
+      <tr>
+        <td>Text Styles and Lists<br>(Ex. 2)</td>
+      <td>
+        <ul>
+          <li><span style="color: black">All Pages</span></li>
+            <ul>
+              <li><span style="color: black">Text styles used on all pages</span></li>
+            </ul>
+          <li><span style="color: black">This Page</span></li>
+          <ul>
+            <li><span style="color: black">Lists used on all pages as navigation bar and on <a href="index.html">Home</a> and this page</span></li>
+          </ul>
+        </ul>
+      </td>
+     </tr>
+     <!-- links -->
+      <tr class="odd">
+        <td>Images and Graphics<br>(Ex. 3)</td>
+        <td>
+          <ul>
+            <li><span style="color: black">All Pages</span></li>
+              <ul>
+                <li><span style="color: black">(All images found via google images and belong to their respective owners)</span></li>
+              </ul>
+            <li><span style="color: black">Images Heavily Used Throughout Bouquet Collection Pages</span></li>
+              <ul>
+								<li><a href="classics.html">Classics page</a></li>
+								<li><a href="emoting.html">Emoting page</a></li>
+								<li><a href="wedding.html">Wedding page</a></li>
+              </ul>
+          </ul>
+        </td>
+      </tr>
+      <!-- links -->
+      <tr>
+        <td>Links<br>(Ex. 4)</td>
+        <td>
+        <ul>
+          <li><span style="color: black">All Pages</span></li>
+          <ul>
+            <li><span style="color: black">Navigation</span></li>
+            <li><span style="color: black">Social Media links</span></li>
+            <li><span style="color: black">Links to different project pages</span></li>
+          </ul>
+        </ul>
+        </td>
+      </tr>
+      <!-- jump links -->
+      <tr class="odd">
+      <td>Jump Links<br>(Ex. 4)</td>
+        <td>
+          <ul>
+            <li><span style="color: black">All Pages (Back to Top)</span></li>
+          </ul>
+        </td>
+      </tr>
+      <!-- tables -->
+      <tr>
+        <td>Tables<br>(Ex. 5)</td>
+        <td>
+          <ul>
+            <li><span style="color: black">Bouquet Collection pages</span></li>
+              <ul>
+								<li><a href="classics.html">Classics page</a></li>
+                <li><a href="emoting.html">Emoting page</a></li>
+                <li><a href="wedding.html">Wedding page</a></li>
+              </ul>
+            <li><span style="color: black">This Page</span></li>
+            <li><span style="color: black">Integrated in JavaScript Dropdown Navigation</span></li>
+          </ul>
+          </td>
+      </tr>
+      <!-- frames and iframes -->
+      <tr class="odd">
+        <td>Frames and/or IFrames<br>(Ex. 6)</td>
+        <td>
+          <ul>
+            <li><span style="color: black">No Iframes or Frames</span></li>
+            <ul>
+              <li><span style="color: black">IFrames from Project 2 shop.html and custom.html upgraded to lightbox JavaScript</span></li>
+            </ul>
+          </ul>
+        </td>
+      </tr>
+      <!-- forms -->
+      <tr>
+        <td>Forms<br>(Ex. 7)</td>
+        <td>
+          <ul>
+            <li><span style="color: black">All Pages</span></li>
+            <ul>
+              <li><span style="color: black">Email newsletter form at bottom of page</span></li>
+            </ul>
+						<li><a href="contact.html">Contact page</a></li>
+          </ul>
+        </td>
+      </tr>
+      <!-- css -->
+      <tr class="odd">
+        <td>CSS<br>(Ex. 8)</td>
+        <td>
+          <ul>
+            <li><span style="color: black">Eternal Style Sheet linked to All Pages</span></li>
+            <li><span style="color: black">Eternal Style Sheet linked to <a href="shop.html">Shop</a> and <a href="custom.html">Custom</a> pages for JavaScript use</span></li>
+            <li><span style="color: black">Extra CSS added to certain pages</span></li>
+          </ul>
+        </td>
+      </tr>
+      <!-- javascript -->
+      <tr>
+        <td>JavaScript<br>(Ex. 9)</td>
+        <td>
+          <ul>
+            <li><span style="color: black">All Pages - Navigation JavaScript</span></li>
+            <li><span style="color: black"><a href="shop.html">Shop</a> and <a href="custom.html">Custom</a> pages - Lightbox JavaScript</span></li>
+            <li><span style="color: black"><a href="about.html">About Us page</a> - Slideshow JavaScript</span></li>
+          </ul>
+        </td>
+      </tr>
+      <!-- html5 and css3 -->
+      <tr class="odd">
+        <td>HTML5 and/or CSS3<br>(Ex. 10)</td>
+        <td>
+          <ul>
+            <li><span style="color: black">All Pages</span></li>
+              <ul>
+                <li><span style="color: black">Pseudo-Elements - First Letter Enlarged of paragraphs</span></li>
+                <li><span style="color: black">Pseudo-Classes - link hover</span></li>
+                <li><span style="color: black">CSS opacity using rgba values</span></li>
+              </ul>
+          </ul>
+        </td>
+      </tr>
+      <!-- pages -->
+      <tr>
+        <td colspan="2">
+        <h3 class="redfont">Complete Page List:</h3>
+          <ul>
+            <li><a href="index.html">index.html</a></li>
+            <li><a href="shop.html">shop.html</a></li>
+              <ul>
+                <li><a href="classics.html">classics.html</a></li>
+                <li><a href="emoting.html">emoting.html</a></li>
+                <li><a href="wedding.html">wedding.html</a></li>
+                <li><a href="custom.html">custom.html</a></li>
+              </ul>
+            <li><a href="about.html">about.html</a></li>
+            <li><a href="contact.html">contact.html</a></li>
+            <li><span style="color: black">elements.html (this page)</span></li>
+          </ul>
+        </td>
+      </tr>
+    </table> <!-- table end -->
+</div>
+	<hr align="center" size="1" width="80%"	color=silver>
+
+	<div id="footer">
+	</div>
+</div> <!-- end wrapper -->
+
+<!-- Back to Top -->
+<div id="backtotop">
+	<a href = "#banner">
+	<img src = "images/scissors_1.png"
+	 width = "60px" height = "118px"
+	 alt = "Scissors - Back to Top" title = "Back to Top">
+	</a>
+</div>
+
+<!-- copyright footer -->
+<div id="copyrightarea">
+	<div align="center">
+		<form method="post" action="mailto:eclairrei@gmail.com" enctype="text/plain">
+			<legend>Enter your email to sign up for our newsletter
+				<input style="border:2px solid black; background-color: #4d4d4d; color: white;"
+				type="text" name="email" size="50">
+				<input style="background-color: #4d4d4d; border:1px solid silver; color: white;
+				 font-weight: bold;" type="submit" value="Join" name="submit button"></legend>
+		</form> <!--form end-->
+
+			<div>
+					Follow us on Social Media:
+				 <a href="https://www.facebook.com/login/" target="_blank"><img src = "images/social_media.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology facebook"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_2.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology twitter"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_3.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology pinterest"></a>
+				 <a href="https://accounts.google.com/login" target="_blank">
+				 <img src = "images/social_media_4.jpg" width = "35px" height = "35px" alt = "social_media" title = "floralology google plus"></a>
+				 <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src = "images/social_media_5.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology instagram"></a>
+		 </div>
+	 </div>
+
+	<hr align="center" size="1" width="60%"	color=#4d4d4d>
+	<p class="smalltext">&copy;  Floralology Artisan Florists. All Rights not Reserved. Jair
+		2016. MAT 125 Project3 Fictional Business.</p>
+</div>
+
+</body>
+</html>

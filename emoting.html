@@ -1,0 +1,535 @@
+<!-- Name:  Jair Bacaycay
+     Due:   08/04/16
+     Class: MAT 125
+     Homework: Project3
+     File:  emoting    -->
+<!-- Page Description: Floralology emoting collection  -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Cinzel+Decorative'>
+		<title>Floralology Shop: Emoting Collection</title>
+		<link rel = "stylesheet"
+		 type = "text/css"
+		 href = "styles.css">
+		 <script language="javascript">
+					<!--
+
+					// Copyright 2006-2007 javascript-array.com
+					var timeout = 500;
+					var closetimer = 0;
+					var ddmenuitem = 0;
+
+					// open hidden layer
+					function mopen(id)
+					{
+						// cancel close timer
+						mcancelclosetime();
+
+						// close old layer
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+						// get new layer and show it
+						ddmenuitem = document.getElementById(id);
+						ddmenuitem.style.visibility = 'visible';
+					}
+
+					// close showed layer
+					function mclose()
+					{
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+					}
+
+					// go close timer
+					function mclosetime()
+					{
+						closetimer = window.setTimeout(mclose, timeout);
+					}
+
+					// cancel close timer
+					function mcancelclosetime()
+					{
+						if(closetimer)
+						{
+							window.clearTimeout(closetimer);
+							closetimer = null;
+						}
+					}
+
+					// close layer when click-out
+					document.onclick = mclose;
+					// Stop hiding -->
+			</script>
+	</head>
+
+<body>
+<!-- Company Name & jump link on banner  -->
+<div id="banner">
+	<a href="index.html"><h1><em>Floralology</em></h1>
+	<p class="redfont">Artisan Florists</p></a>
+</div>
+
+<!-- Linking pages -->
+<ul id="ddm">
+	<table align="center" cellpadding="5" style="padding: 0;">
+	<td> <!-- not sure why <td> shows up as red in view source code -->
+		<li><a href="index.html">Home</a></li>
+		<li><a href="shop.html"
+	        onmouseover="mopen('m1')"
+	        onmouseout="mclosetime()">Shop</a>
+					<div id="m1"
+	          onmouseover="mcancelclosetime()"
+	          onmouseout="mclosetime()">
+	          <a href="classics.html">Classics</a>
+						<a href="emoting.html"><span style="color: #da4646">Emoting</span></a>
+						<a href="wedding.html">Wedding</a>
+						<a href="custom.html">Custom</a>
+					</div>
+		</li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="elements.html">Elements</a></li>
+	</td>
+	</table>
+</ul>
+
+<!-- Main Content -->
+<div id="wrapper">
+	<!-- Collection Banner -->
+	<h1 class="collectionbanner">Emoting Collection</h1>
+	<!-- Emoting Headline and text -->
+	<h2>Some Things are Beyond Words: Like Flowers</h2>
+	<div id="special">
+	   <p>The Emoting Collection is our oldest collection and utilizes the long
+		 history of flora and fauna to inform what is used in a bouquet. Particularly,
+		 the Victorian tradition of using flowers to convey feelings, the Language of
+		 Flowers, also known as floriography, is used in our Emoting Collection. Giving you the voice of flowers,
+		 we have summarized the meanings of the Emoting bouquets in the following list.</p>
+  </div>
+	<hr align="center" size="1" width="80%"	color=silver>
+
+	<!-- emoting collection start -->
+	<table cellpadding="10"
+		cellspacing="7"
+		width="1000px">
+		<!-- hydrangea -->
+		<tr><td rowspan="6">
+			<img src = "images/hydrangea.jpg"
+			 width = "250px" height = "250px"
+			 alt = "emoting-Ac4c00" title = "Emoting - Hydrangea" class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Hydrangea - <em>Hydrangea macrophylla</em></span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Language of Flowers Meaning:</span>
+			A bouquet of Hydrangea can symbolize heartfelt emotions, such as gratitude, but
+			can also have a more boastful meaning of vanity--perhaps due to its showy nature.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> Ac4c00</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $89.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- lotus -->
+		<tr><td rowspan="6">
+			<img src = "images/lotus.jpg"
+			 width = "250px" height = "250px"
+			 alt = "emoting-Ls09dn" title = "Emoting - Lotus"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Lotus - <em>Nelumbo Nucifera</em></span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Language of Flowers Meaning:</span> The
+			 dignified lotus blooms, represent eloquence in manner and speech.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> Ls09dn</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $89.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- chamomile -->
+		<tr><td rowspan="6">
+			<img src = "images/chamomile.jpg"
+			 width = "250px" height = "250px"
+			 alt = "emoting-Tak237" title = "Emoting - Chamomile"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Chamomile - <em>Matricaria Chamomilla</em></span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Language of Flowers Meaning:</span> Chamomile blossoms,
+			are soothing small blooms that have calming effects, heath-wise, but also
+			have a stronger significance: strength through adversity.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> Tak237</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $59.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- tulips -->
+		<tr><td rowspan="6">
+		<img src = "images/tulips-enduring-love.jpg"
+		 width = "250px" height = "250px"
+		 alt = "emoting-T7285i" title = "Emoting - Tulips"
+		 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Tulips - <em>Tulipa</em></span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Language of Flowers Meaning:</span>
+			Tulips herald the lovely pledge for enduring love.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> T7285i</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $59.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- amaranth-globe -->
+		<tr><td rowspan="6">
+			<img src = "images/amaranth-globe.jpg"
+			 width = "250px" height = "250px"
+			 alt = "emoting-Y23h4k" title = "Emoting - 	Amaranth Globe"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Amaranth Globe - <em>Gomphrena Globosa</em></span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Language of Flowers Meaning:</span>
+			Amaranth Globe speek of the hope for eternal feelings of immortality and
+			unfading Love.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> Y23h4k</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $59.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- french-lavender -->
+		<tr><td rowspan="6">
+			<img src = "images/french-lavender.jpg"
+			 width = "250px" height = "250px"
+			 alt = "emoting-L328ta" title = "Emoting - Lavender"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Lavender - <em>Lavendula</em></span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Language of Flowers Meaning:</span> Lavenders
+			represent love, devotion and purity. In the <em>Hanakotoba</em>, the Japanese
+			language of the flowers, lavender signify faithfulness.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> L328ta</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $59.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- cactus -->
+		<tr><td rowspan="6">
+			<img src = "images/cactus.jpg"
+			 width = "250px" height = "250px"
+			 alt = "emoting-S32cks" title = "Emoting - Cactus"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Cactus - <em>Cactaceae</em></span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Language of Flowers Meaning:</span> Cactus,
+			like the habitats that they are known to thrive in, represent warmth.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> S32cks</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $69.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- olive -->
+		<tr><td rowspan="6">
+			<img src = "images/olive.jpg"
+			 width = "250px" height = "250px"
+			 alt = "emoting-0as89d" title = "Emoting - Olive"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Olive - <em>Olea Europaea</em></span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Language of Flowers Meaning:</span> Olive
+			branches universally call for peace.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> 0as89d</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $59.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- rose -->
+		<tr><td rowspan="6">
+			<img src = "images/Rose_at_Ofuna_Botanical_Garden_Kamakura.jpg"
+			 width = "250px" height = "250px"
+			 alt = "emoting-Y23h4k" title = "Emoting - Rose"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Rose - <em>Rosa</em></span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Language of Flowers Meaning:</span> As is
+			commonly known, roses are glamourous and storied blooms, but red
+			roses, especially, represent romance.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> Y23h4k</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $79.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+	  </tr>
+		<!-- sweet alyssum -->
+		<tr><td rowspan="6">
+		<img src = "images/sweet-alyssum.jpg"
+		 width = "250px" height = "250px"
+		 alt = "emoting-A012jc" title = "Emoting - Sweet Alyssum"
+		 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Sweet Alyssum - <em>Lobularia Maritima</em></span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Language of Flowers Meaning:</span> Sweet
+		  Alyssum has a two pretty messages to its delicate little blooms: being
+			beyond beauty or representing the sweetness of the soul.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> A012jc</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $49.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- liliy of the valley -->
+	  <tr><td rowspan="6">
+		  <img src = "images/lily-of-the-valley.jpg"
+		 	width = "250px" height = "250px"
+		 	alt = "emoting-l032bf" title = "Emoting - Lily of the Valley"
+		 	class="collectionpic"></td>
+	  </tr>
+	  <tr>
+	 	 <td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+	 	 Lily of the Valley - <em>Convallaria Majalis</em></span></h3></td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Language of Flowers Meaning:</span> Lily of
+		 the Valley are nostalgic white bursts of happy blooms that signify a return
+		 to happiness or the notion of purity.</td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Product Code:</span> l032bf</td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Price:</span> $69.99</td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Availability:</span> In Stock</td>
+	  </tr>
+		<!-- myrtle -->
+	  <tr><td rowspan="6">
+		  <img src = "images/myrtle.jpg"
+		 	width = "250px" height = "250px"
+		 	alt = "emoting-l032bf" title = "Emoting - Myrtle"
+		 	class="collectionpic"></td>
+	  </tr>
+	  <tr>
+	 	 <td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+	 	 Myrtle - <em>Myrtus</em></span></h3></td>
+	  </tr>
+	  <tr>
+			<td><span style="color: #d63131">Language of Flowers Meaning:</span> Myrtle
+			stems are cool and pert and represent the pleasant feelings of love and gladness.</td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Product Code:</span> l032bf</td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Price:</span> $59.99</td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Availability:</span> In Stock</td>
+	  </tr>
+		<!-- flowering almond -->
+	  <tr><td rowspan="6">
+		  <img src = "images/flowering-almond.jpg"
+		 	width = "250px" height = "250px"
+		 	alt = "emoting-k2222a" title = "Emoting - Flowering Almond"
+		 	class="collectionpic"></td>
+	  </tr>
+	  <tr>
+	 	 <td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+	 	 Flowering Almond - <em>Prunus Dulcis</em></span></h3></td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Language of Flowers Meaning:</span> More
+		than other budding blooms, flowering almonds represent hope while looks sweet
+		and beautiful.</td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Product Code:</span> Ma89sh</td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Price:</span> $79.99</td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Availability:</span> In Stock</td>
+	  </tr>
+		<!-- daisy -->
+	  <tr><td rowspan="6">
+		  <img src = "images/daisy.jpg"
+		 	width = "250px" height = "250px"
+		 	alt = "emoting-j32a8i" title = "Emoting - Daisy"
+		 	class="collectionpic"></td>
+	  </tr>
+	  <tr>
+	 	 <td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+	 	 Daisy - <em>Bellis Perennis</em></span></h3></td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Language of Flowers Meaning:</span> White daisies,
+		 more than the other colors, represent innocence, as can be visibly seen. They
+		 also have other positive connotations: purity, new beginnings and true love.
+	   </td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Product Code:</span> j32a8i</td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Price:</span> $59.99</td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Availability:</span> In Stock</td>
+	  </tr>
+		<!-- daffodil -->
+	  <tr><td rowspan="6">
+		  <img src = "images/daffodil_2.jpg"
+		 	width = "250px" height = "250px"
+		 	alt = "emoting-d0s7v3" title = "Emoting - Daffodil"
+		 	class="collectionpic"></td>
+	  </tr>
+	  <tr>
+		 	 <td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+		 	 Daffodil - <em>Narcissus</em></span></h3></td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Language of Flowers Meaning:</span> Daffodils
+		 are associated with a few meanings--regard and chivalry. Also, as its botanical
+		 name suggests, like the beautiful Greek hunter, Narcissus, daffodils can
+		 indicate vanity and self-esteem.</td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Product Code:</span> d0s7v3</td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Price:</span> $39.99</td>
+	  </tr>
+	  <tr>
+	 	 <td><span style="color: #d63131">Availability:</span> In Stock</td>
+	  </tr>
+	</table> <!-- product table end -->
+		<hr align="center" size="1" width="80%"	color=silver>
+
+	<div id="footer">
+	</div>
+</div>
+
+<!-- Back to Top -->
+<div id="backtotop">
+	<a href = "#banner">
+	<img src = "images/scissors_1.png"
+	 width = "60px" height = "118px"
+	 alt = "Scissors - Back to Top" title = "Back to Top">
+	</a>
+</div>
+
+<!-- copyright footer -->
+<div id="copyrightarea">
+	<div align="center">
+		<form method="post" action="mailto:eclairrei@gmail.com" enctype="text/plain">
+			<legend>Enter your email to sign up for our newsletter
+				<input style="border:2px solid black; background-color: #4d4d4d; color: white;"
+				type="text" name="email" size="50">
+				<input style="background-color: #4d4d4d; border:1px solid silver; color: white;
+				 font-weight: bold;" type="submit" value="Join" name="submit button"></legend>
+		</form> <!--form end-->
+
+			<div>
+					Follow us on Social Media:
+				 <a href="https://www.facebook.com/login/" target="_blank"><img src = "images/social_media.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology facebook"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_2.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology twitter"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_3.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology pinterest"></a>
+				 <a href="https://accounts.google.com/login" target="_blank">
+				 <img src = "images/social_media_4.jpg" width = "35px" height = "35px" alt = "social_media" title = "floralology google plus"></a>
+				 <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src = "images/social_media_5.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology instagram"></a>
+		 </div>
+	 </div>
+
+	<hr align="center" size="1" width="60%"	color=#4d4d4d>
+	<p class="smalltext">&copy;  Floralology Artisan Florists. All Rights not Reserved. Jair
+		2016. MAT 125 Project3 Fictional Business.</p>
+</div>
+
+</body>
+</html>

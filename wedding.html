@@ -1,0 +1,475 @@
+<!-- Name:  Jair Bacaycay
+     Due:   07/18/16
+     Class: MAT 125
+     Homework: Project2
+     File:  wedding    -->
+<!-- Page Description: wedding collection -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Cinzel+Decorative'>
+		<title>Floralology Shop: Wedding Collection</title>
+		<link rel = "stylesheet"
+		 type = "text/css"
+		 href = "styles.css">
+		 <script language="javascript">
+					<!--
+
+					// Copyright 2006-2007 javascript-array.com
+					var timeout = 500;
+					var closetimer = 0;
+					var ddmenuitem = 0;
+
+					// open hidden layer
+					function mopen(id)
+					{
+						// cancel close timer
+						mcancelclosetime();
+
+						// close old layer
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+						// get new layer and show it
+						ddmenuitem = document.getElementById(id);
+						ddmenuitem.style.visibility = 'visible';
+					}
+
+					// close showed layer
+					function mclose()
+					{
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+					}
+
+					// go close timer
+					function mclosetime()
+					{
+						closetimer = window.setTimeout(mclose, timeout);
+					}
+
+					// cancel close timer
+					function mcancelclosetime()
+					{
+						if(closetimer)
+						{
+							window.clearTimeout(closetimer);
+							closetimer = null;
+						}
+					}
+
+					// close layer when click-out
+					document.onclick = mclose;
+					// Stop hiding -->
+			</script>
+	</head>
+
+<body>
+<!-- Company Name & jump link on banner -->
+<div id="banner">
+	<a href="index.html"><h1><em>Floralology</em></h1>
+	<p class="redfont">Artisan Florists</p></a>
+</div>
+
+<!-- Linking pages -->
+<ul id="ddm">
+	<table align="center" cellpadding="5" style="padding: 0;">
+	<td> <!-- not sure why <td> shows up as red in view source code -->
+		<li><a href="index.html">Home</a></li>
+		<li><a href="shop.html"
+	        onmouseover="mopen('m1')"
+	        onmouseout="mclosetime()">Shop</a>
+					<div id="m1"
+	          onmouseover="mcancelclosetime()"
+	          onmouseout="mclosetime()">
+	          <a href="classics.html">Classics</a>
+						<a href="emoting.html">Emoting</a>
+						<a href="wedding.html"><span style="color: #da4646">Wedding</span></a>
+						<a href="custom.html">Custom</a>
+					</div>
+		</li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="elements.html">Elements</a></li>
+	</td>
+	</table>
+</ul>
+
+<!-- Main Content -->
+<div id="wrapper">
+	<!-- Collection Banner -->
+	<h1 class="collectionbanner">Wedding Collection</h1>
+	<!-- Wedding Headline and text -->
+	<h2>The Most Important Flowers For Your Important Day</h2>
+	<div id="special">
+		<p>For your special day, we would love to help you make a personalized
+		<a href="custom.html">custom</a> bridal bouquet made to match your wedding theme.
+		Otherwise, check out our Wedding bouquets that are ready to ship to any lucky
+		bride-to-be.</p>
+		<p>Note: Our cascading bridal bouquets take longer to ship.
+		They tend to ship within 2-5 days. Other bouquets tend to ship withing 1-2 days</p>
+  </div>
+	<hr align="center" size="1" width="80%"	color=silver>
+
+	<!-- wedding collection table start -->
+	<table cellpadding="10"
+		cellspacing="7"
+		width="1000px">
+		<tr><td rowspan="6">
+		<!-- Bouquet 1 -->
+			<img src = "images/wedding_1.jpg"
+			 width = "300px" height = "300px"
+			 alt = "wedding-An221j" title = "Wedding - Anatolia"
+			 class="collectionpic"></td>
+	  </tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Anatolia</h3></span></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Anatolia</span> is a richly
+			antique-styled bouquet with soft details. This bouquet is both elegant and
+			dignified despite having a touch of wild strength from the prominent inclusion
+		 	of dark wispy eucalyptus stems. This bouquet is perfect for country weddings
+			set in natural landscape venues.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> An221j</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $199.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 2 -->
+		<tr><td rowspan="6">
+			<img src = "images/wedding_2.jpg"
+			 width = "300px" height = "300px"
+			 alt = "wedding-a9SH8g" title = "Wedding - Agatha"
+			 class="collectionpic"></td>
+	 	</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Agatha</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Agatha</span> is calmly demure, pure and blushing. This bouquet
+			looks lovely in natural environments and lends charm to spring and summer weddings.
+			Agatha draws attention to youthful love.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> a9SH8g</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $139.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 3 -->
+		<tr><td rowspan="6">
+			<img src = "images/wedding_3.jpg"
+			 width = "300px" height = "300px"
+			 alt = "wedding-Js08am" title = "Wedding - Dafna"
+			 class="collectionpic"></td>
+	  </tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Dafna</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Dafna</span> is a large statement
+			bouquet. The exclusive use of olive branches make a simple call for peace
+			and happiness. Dafna makes a universally agreeable statement in
+			outdoor or modern venues and is equally agreeable at Mediterranean-themed
+			nuptials.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> Js08am</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $149.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 4 -->
+		<tr><td rowspan="6">
+			<img src = "images/wedding_5.jpg"
+			 width = "300px" height = "300px"
+			 alt = "wedding-Nl90ta" title = "Wedding - Marya"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Marya</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Marya</span> is inspired by the simplicity of campestral
+			fields and is a celebration of the simple things in life that are wholesome
+			and full of the promise of growth. Needless to say, this bouquet is in
+			harmony with country-themed weddings. </td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> Nl90ta</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $129.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 5-->
+		<tr><td rowspan="6">
+			<img src = "images/wedding_4.jpg"
+			 width = "300px" height = "300px"
+			 alt = "wedding-Yer98a" title = "Wedding - Cyrene"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Cyrene</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Cyrene</span> is neutral and crisp:
+			it breathes in a cool refreshing air of wholesome vegetation and subtle
+			white florals. Perfect for the bride that wants a less floral
+			bridal companion with her as she makes her vows. Also, it looks great in
+			modern venues with minimalist or naturalistic colors and themes. </td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> Yer98a</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $129.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Taiyou -->
+		<tr><td rowspan="6">
+			<img src = "images/wedding_12.jpg"
+			 width = "300px" height = "300px"
+			 alt = "wedding-Is3ka4" title = "Wedding - Tulla"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Taiyou</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Taiyou</span> is sunny and lush. Taiyou
+			has bursts of yellow acacia, which lightly speak of love, according
+		  to the language of flowers, making it a perfect addition to the hand of a
+		  bride.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> TnIma0</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $129.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Tulla-->
+		<tr><td rowspan="6">
+			<img src = "images/wedding_6.jpg"
+			 width = "300px" height = "300px"
+			 alt = "wedding-Is3ka4" title = "Wedding - Tulla"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Tulla</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Tulla</span> is bright and lucid with a
+			starry inclusion of an eloquent lotus and many stems of small sprits of florals.
+			Tulla is flashy without being tactless and brings a sense of fun and
+			light-heartedness to a notoriously stiff and formal occasion.  </td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> Is3ka4</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $149.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 7-->
+		<tr><td rowspan="6">
+			<img src = "images/wedding_7.jpg"
+			 width = "300px" height = "300px"
+			 alt = "wedding-s05H4k" title = "Wedding - Yona"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Yona</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Yona</span> is reminiscent to the
+			first blushing rays of dawn in the transforming night skies. It is elegant and
+			cute, but majestic and powerful with its large roses and pink peonies.
+			The dignified pink blooms are guarded by cool leafy companions to balance
+			its strengths. This bouquet is popular with many brides with diverse
+			wedding themes. </td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> s05H4k</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $169.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 8-->
+		<tr><td rowspan="8">
+			<img src = "images/wedding_9.jpg"
+			 width = "300px" height = "485px"
+			 alt = "wedding-L31c3sa" title = "Wedding - Elizabeth"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Elizabeth</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Elizabeth</span> is a lovely and elaborate
+			cascading	bouquet perfect for the bride that wants a show-stopping companion
+			in her hands during a spring, summer, or outdoor wedding. Elizabeth conveys
+			a mix of emotions from its heavy use of pink roses: desire, admiration,
+			joy and sweetness while being offset by light leafy vines, sprigs of
+			eucalyptus, and warming cactus.  </td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Style:</span> Cascading</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> L31c3s</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $249.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> Backordered</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Estimated Shipping Time:</span> 2 week pending</td>
+		</tr>
+		<!-- Bouquet 9-->
+		<tr><td rowspan="8">
+			<img src = "images/wedding_10.jpg"
+			 width = "300px" height = "469px"
+			 alt = "wedding-Sa9s0s" title = "Wedding - Maudrentine"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Maudrentine</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Maudrentine</span> is a glamourous bridal
+			bouquet fit for a queen-to-be. Its complexion is stained by a mix of deep
+			mysterious red and pink roses and a mix of white pallid blooms and buds.
+			The under layer of the bouquet is full of deep green leaves and elegant vines.
+			This bouquet is perfect for modern and elegant venues.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Style:</span> Cascading</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> Sa9s0s</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $249.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Estimated Shipping Time:</span> 1 week</td>
+		</tr>
+		<!-- Bouquet 10-->
+		<tr><td rowspan="8">
+		<img src = "images/wedding_11.jpg"
+		 width = "300px" height = "481px"
+		 alt = "wedding-6pEt5r" title = "Wedding - Eden"
+		 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Eden</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Eden</span> is a leafy wild mix of light
+			blooms and vegetation, perfect for spring weddings, when the first buds
+			have not yet bloomed. Represents a time of edenesque freedom and innocent growth as
+			the days of old while looking to the days to come.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Style:</span> Cascading</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> 6pEt5r</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $199.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Estimated Shipping Time:</span> 1 week</td>
+		</tr>
+	</table> <!-- table end -->
+		<hr align="center" size="1" width="80%"	color=silver>
+
+	<div id="footer">
+	</div>
+</div> <!-- body end -->
+
+<!-- Back to Top -->
+<div id="backtotop">
+	<a href = "#banner">
+	<img src = "images/scissors_1.png"
+	 width = "60px" height = "118px"
+	 alt = "Scissors - Back to Top" title = "Back to Top">
+	</a>
+</div>
+
+<!-- copyright footer -->
+<div id="copyrightarea">
+	<div align="center">
+		<form method="post" action="mailto:eclairrei@gmail.com" enctype="text/plain">
+			<legend>Enter your email to sign up for our newsletter
+				<input style="border:2px solid black; background-color: #4d4d4d; color: white;"
+				type="text" name="email" size="50">
+				<input style="background-color: #4d4d4d; border:1px solid silver; color: white;
+				 font-weight: bold;" type="submit" value="Join" name="submit button"></legend>
+		</form> <!--form end-->
+
+			<div>
+					Follow us on Social Media:
+				 <a href="https://www.facebook.com/login/" target="_blank"><img src = "images/social_media.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology facebook"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_2.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology twitter"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_3.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology pinterest"></a>
+				 <a href="https://accounts.google.com/login" target="_blank">
+				 <img src = "images/social_media_4.jpg" width = "35px" height = "35px" alt = "social_media" title = "floralology google plus"></a>
+				 <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src = "images/social_media_5.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology instagram"></a>
+		 </div>
+	 </div>
+
+	<hr align="center" size="1" width="60%"	color=#4d4d4d>
+	<p class="smalltext">&copy;  Floralology Artisan Florists. All Rights not Reserved. Jair
+		2016. MAT 125 Project3 Fictional Business.</p>
+</div>
+
+</body>
+</html>

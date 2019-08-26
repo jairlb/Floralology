@@ -1,0 +1,265 @@
+<!-- Name:  Jair Bacaycay
+     Due:   08/04/16
+     Class: MAT 125
+     Homework: Project3
+     File:  about    -->
+<!-- Page Description: index: floralology about us page  -->
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+   <title>Floralology - About Us</title>
+   <script type="text/javascript" src="js/jquery.js"></script>
+   <link rel = "stylesheet"
+    type = "text/css"
+    href = "styles.css">
+    <style type="text/css">
+      /* classes */
+      .ceo {
+        float: left;
+        margin: 0 auto 0 15px; }
+      .lineconfig { padding: 10px 0 10px 0; }
+
+      /* Add this CSS for the Slideshow -- put this part in the CSS Document styles in the head    */
+      #slideshow {
+          position: relative;
+        	width: 950px;
+    			height: 288px;
+          left: 25px;
+          right: 25px;
+    			margin: 0;
+    			padding: 0;	 }
+
+      #slideshow IMG {
+          position:absolute;
+          z-index:8;
+          opacity:0.0;
+          margin: 0;
+          padding: 0; }
+
+      #slideshow IMG.active {
+          z-index:10;
+          opacity:1.0;  }
+
+      #slideshow IMG.last-active {
+          z-index:9;  }
+
+      /* end slideshow CSS be sure this part is all inside your document styles */
+    </style>
+
+    <script language="javascript">
+         <!--
+         // Copyright 2006-2007 javascript-array.com
+         var timeout = 500;
+         var closetimer = 0;
+         var ddmenuitem = 0;
+
+         // open hidden layer
+         function mopen(id)
+         {
+           // cancel close timer
+           mcancelclosetime();
+
+           // close old layer
+           if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+           // get new layer and show it
+           ddmenuitem = document.getElementById(id);
+           ddmenuitem.style.visibility = 'visible';
+         }
+
+         // close showed layer
+         function mclose()
+         {
+           if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+         }
+
+         // go close timer
+         function mclosetime()
+         {
+           closetimer = window.setTimeout(mclose, timeout);
+         }
+
+         // cancel close timer
+         function mcancelclosetime()
+         {
+           if(closetimer)
+           {
+             window.clearTimeout(closetimer);
+             closetimer = null;
+           }
+         }
+
+         // close layer when click-out
+         document.onclick = mclose;
+         // Stop hiding -->
+
+        /***
+            Simple jQuery Slideshow Script
+            Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+        ***/
+
+        function slideSwitch()
+        {
+            var $active = $('#slideshow IMG.active');
+
+            if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+            // use this to pull the images in the order they appear in the markup
+            var $next =  $active.next().length ? $active.next()
+                : $('#slideshow IMG:first');
+
+            // uncomment the 3 lines below to pull the images in random order
+
+            // var $sibs  = $active.siblings();
+            // var rndNum = Math.floor(Math.random() * $sibs.length );
+            // var $next  = $( $sibs[ rndNum ] );
+
+
+            $active.addClass('last-active');
+
+            $next.css({opacity: 0.0})
+                .addClass('active')
+                .animate({opacity: 1.0}, 1000, function()
+                {
+                    $active.removeClass('active last-active');
+                });
+        }
+
+        $(function()
+        {
+            setInterval( "slideSwitch()", 5000 );
+        });
+     </script>
+      <!-- End of slider javascript -->
+  </head>
+
+<body>
+
+<!-- Company Name & jump link on banner  -->
+<div id="banner">
+ <a href="index.html"><h1><em>Floralology</em></h1>
+ <p class="redfont">Artisan Florists</p></a>
+</div>
+
+<!-- Linking pages -->
+<ul id="ddm">
+	<table align="center" cellpadding="5" style="padding: 0;">
+	<td> <!-- not sure why <td> shows up as red in view source code -->
+		<li><a href="index.html">Home</a></li>
+		<li><a href="shop.html"
+	        onmouseover="mopen('m1')"
+	        onmouseout="mclosetime()">Shop</a>
+					<div id="m1"
+	          onmouseover="mcancelclosetime()"
+	          onmouseout="mclosetime()">
+	          <a href="classics.html">Classics</a>
+						<a href="emoting.html">Emoting</a>
+						<a href="wedding.html">Wedding</a>
+						<a href="custom.html">Custom</a>
+					</div>
+		</li>
+		<li><a href="about.html"><span style="color: #da4646">About Us</span></a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="elements.html">Elements</a></li>
+	</td>
+	</table>
+</ul>
+
+<!-- Main Content -->
+<div id="wrapper">
+ <!-- floralology about us headline -->
+ <h1 class="collectionbanner">About Us</h1>
+
+ <h2>For the Love of Flowers</h2>
+ <div id="special">
+   <p>Established in 2016, Floralology, pronounced flow-rul-ology, is a dedicated team of professional
+   florists and botanists who aspire to bring more beauty into the world through
+   the crafting of artisan floral arrangements. We strongly believe that a
+   beautifully crafted bouquet has a powerful voice and effect: fresh blooms and
+   snippets of all kinds of natural fauna arranged to perfection, have the unique ability
+   to bear special significance, lighten one's spirits and create a wonderful
+   atmosphere. At Floralology, we believe that we all have a claim to cherish,
+   protect, and ultimately enjoy nature in all its glory. With our keen love of nature,
+   we continue to share our unique design perspective of shaping unique, meaningful, and quality bouquets and arrangements
+   which lets you enjoy nature and bask in a special taste of its beauty.</p><br>
+ </div>
+
+ <!-- This is where the slideshow starts in the body area -->
+ <div id="slideshow">
+     <img src="images/slides.jpg" alt="Slideshow Image 1" class="active" />
+     <img src="images/slides_2.jpg" alt="Slideshow Image 2" />
+     <img src="images/slides_3.jpg" alt="Slideshow Image 3" />
+     <img src="images/slides_4.jpg" alt="Slideshow Image 4" />
+     <img src="images/slides_5.jpg" alt="Slideshow Image 5" />
+     <img src="images/slides_6.jpg" alt="Slideshow Image 6" />
+     <img src="images/slides_7.jpg" alt="Slideshow Image 7" />
+     <img src="images/slides_8.jpg" alt="Slideshow Image 8" />
+ </div>
+ <!-- This is the end of the HTML coding for the slider -->
+
+<br>
+ <h2>We Wake Up Every Day to Share Our Love of Florals</h2>
+ <div id="special">
+   <p>As we love flowers and want to share our love with our customers, we work
+   to present our customers with artisan floral creations infused with
+   meaning. As we continue to grow, we are dedicated to ensuring that our goal
+   continues to further strengthen, expand, and bloom.
+   Please, feel free to <a href="contact.html">contact</a> our team about
+   any questions that you might have about our brand or products.</p>
+   <p><br>Sincerely,</p>
+   <br>
+   <img src = "images/signature.png"
+    width = "220px" height = "56px"
+    alt = "ceo" title = "ceo"
+    class="ceo">
+    <p><br><br><br>Jair Bacaycay<br>CEO, Floralology</p>
+ </div>
+
+ <div id="footer">
+ </div>
+</div> <!-- end wrapper -->
+
+<!-- Back to Top -->
+<div id="backtotop">
+ <a href = "#banner">
+ <img src = "images/scissors_1.png"
+  width = "60px" height = "118px"
+  alt = "Scissors - Back to Top" title = "Back to Top">
+ </a>
+</div>
+
+<!-- copyright footer -->
+<div id="copyrightarea">
+	<div align="center">
+		<form method="post" action="mailto:eclairrei@gmail.com" enctype="text/plain">
+			<legend>Enter your email to sign up for our newsletter
+				<input style="border:2px solid black; background-color: #4d4d4d; color: white;"
+				type="text" name="email" size="50">
+				<input style="background-color: #4d4d4d; border:1px solid silver; color: white;
+				 font-weight: bold;" type="submit" value="Join" name="submit button"></legend>
+		</form> <!--form end-->
+
+			<div>
+					Follow us on Social Media:
+				 <a href="https://www.facebook.com/login/" target="_blank"><img src = "images/social_media.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology facebook"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_2.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology twitter"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_3.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology pinterest"></a>
+				 <a href="https://accounts.google.com/login" target="_blank">
+				 <img src = "images/social_media_4.jpg" width = "35px" height = "35px" alt = "social_media" title = "floralology google plus"></a>
+				 <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src = "images/social_media_5.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology instagram"></a>
+		 </div>
+	 </div>
+
+	<hr align="center" size="1" width="60%"	color=#4d4d4d>
+	<p class="smalltext">&copy;  Floralology Artisan Florists. All Rights not Reserved. Jair
+		2016. MAT 125 Project3 Fictional Business.</p>
+</div>
+
+</body>
+</html>

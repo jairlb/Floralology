@@ -1,0 +1,237 @@
+<!-- Name:  Jair Bacaycay
+     Due:   08/04/16
+     Class: MAT 125
+     Homework: Project3
+     File:  index    -->
+<!-- Page Description: index: floralology home page  -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Floralology - Home</title>
+		<link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+		<link rel = "stylesheet"
+		 type = "text/css"
+		 href = "styles.css">
+		 <style type="text/css">
+			 /* general tag styling */
+			 ul {
+					 margin: 0;
+					 padding: 0; }
+
+			 /* classes */
+			 .homepicleft {
+			   background: rgba(192, 192, 192, 0.5);
+			   padding:10px;
+			   margin: 25px 25px 10px 25px ;
+			   height: 350px;
+			   width: 350px;
+			   float: left; }
+			 .homepicright {
+			   background: rgba(192, 192, 192, 0.5);
+			   padding:10px;
+			   margin:25px 25px 10px 25px ;
+			   height: 350px;
+			   width: 350px;
+			   float: right; }
+		 </style>
+		 <script language="javascript">
+					<!--
+
+					// Copyright 2006-2007 javascript-array.com
+					var timeout = 500;
+					var closetimer = 0;
+					var ddmenuitem = 0;
+
+					// open hidden layer
+					function mopen(id)
+					{
+						// cancel close timer
+						mcancelclosetime();
+
+						// close old layer
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+						// get new layer and show it
+						ddmenuitem = document.getElementById(id);
+						ddmenuitem.style.visibility = 'visible';
+					}
+
+					// close showed layer
+					function mclose()
+					{
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+					}
+
+					// go close timer
+					function mclosetime()
+					{
+						closetimer = window.setTimeout(mclose, timeout);
+					}
+
+					// cancel close timer
+					function mcancelclosetime()
+					{
+						if(closetimer)
+						{
+							window.clearTimeout(closetimer);
+							closetimer = null;
+						}
+					}
+
+					// close layer when click-out
+					document.onclick = mclose;
+					// Stop hiding -->
+			</script>
+	 </head>
+
+<body>
+
+<!-- Company Name & jump link on banner  -->
+<div id="banner">
+	<a href="index.html"><h1><em>Floralology</em></h1>
+	<p class="redfont">Artisan Florists</p></a>
+</div>
+
+<!-- Linking pages -->
+<ul id="ddm">
+	<table align="center" cellpadding="5" style="padding: 0;">
+	<td> <!-- not sure why <td> shows up as red in view source code -->
+		<li><a href="index.html"><span style="color: #da4646">Home</span></a></li>
+		<li><a href="shop.html"
+	        onmouseover="mopen('m1')"
+	        onmouseout="mclosetime()">Shop</a>
+					<div id="m1"
+	          onmouseover="mcancelclosetime()"
+	          onmouseout="mclosetime()">
+	          <a href="classics.html">Classics</a>
+						<a href="emoting.html">Emoting</a>
+						<a href="wedding.html">Wedding</a>
+						<a href="custom.html">Custom</a>
+					</div>
+		</li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="elements.html">Elements</a></li>
+	</td>
+	</table>
+</ul>
+
+<!-- Main Content -->
+<div id="wrapper">
+	<!-- floralology home headline -->
+	<h1 class="collectionbanner">Floralology</h1>
+	<!-- 1st pic: about floralology-->
+	<div class="homepicleft">
+		<img src = "images/organic-wedding-bouquets-cameron-ingalls.jpg"
+		 width = "350px" height = "350px"
+		 alt = "floralology_home_weddings" title = "Weddings">
+	</div>
+
+	<h2>Regardless of Occasion...</h2>
+	<ul>
+		<li><span style="color: black">Weddings</span></li>
+		<li><span style="color: black">Custom Bouquets for Small or Large Events</span></li>
+		<li><span style="color: black">Pre-made Bouquets from our Classics Collection</span></li>
+		<li><span style="color: black">Emoting Bouquets that Convey a Specific Meaning</span></li>
+	</ul>
+
+	<h2>We Have the Flowers For it</h2>
+	<div id="special">
+	  <p>Our talented team of florists pride themselves with continuing the long-standing tradition
+		of using flora and fauna to convey human sensibilities, moods and emotions.
+		We employ classical design techniques, including the Victorian language of flowers,
+		to breath special significance into our floral creations. Though our design ethic takes
+		into account the historical considerations of certain stems and old techniques, we also
+		take into account how to mix past significance with modern motifs and design.
+		This ensures that our bouquets contain a unique air of chic modernity, rich history, and meaning.
+		We offer a large selection of bouquets to choose from and we believe that we can offer fresh
+		high-quality floral arrangements perfect for any occasion. <a href="shop.html">Shop</a> from
+		our varied ready-to-ship artisan collections, including our distinctive
+		<a href="wedding.html">Wedding Collection</a>. Though we have our
+		own signature design process, we would love to work with you to create artisan <a href="custom.html">custom</a>
+		bouquets with your design input that are made to match any event you find life throwing your way.</p>
+	</div>
+
+	<!-- 2nd pic: Ordering details -->
+ 	<div class="homepicright">
+		<img src = "images/bouquet_2.jpg"
+		 width = "350px" height = "350px"
+		 alt = "floralology_home_classics" title = "Classics">
+	</div>
+
+	<h2>How it Works</h2>
+	<div id="special">
+	  <p>Visit us at our La Jolla location or order online from one of our collections of
+		artisan bouquets. For online orders, standard shipping is expedient.
+		We ensure that your flowers arrive within a 1 to 2-day window, except during holidays,
+		in pristine condition or we will refund your order. Custom arrangements require at least a
+		2-day processing time prior to shipment. Certain exceptions can be made depending on the
+		availability of a flower types: if certain plant types are out of season we will not be able to include them in custom orders. In case of any
+		other questions you might	have, visit our <a href="contact.html">contact page</a>, send us any
+		question you might have, and we will try to contact you as soon as possible. <span style="color: #da4646">
+	  And did we mention? Shipping is on us!</span> Shipping on all orders, except oversized custom orders,
+		are shipped to you at no cost.</p>
+	</div>
+
+	<!-- 3rd pic: customer feedback -->
+	<div class="homepicleft" >
+		<img src = "images/unique_bouquet.jpg"
+		 width = "350px" height = "350px"
+		 alt = "floralology_home_custom" title = "Custom">
+	</div>
+
+	<br><br><br><br><br>
+	<h2>What Customers Think About Floralology</h2>
+	<div id="special">
+		<p><em>"I love Floralology. The service is great and they create beautiful and
+			 sentimental bouquets that make any occasion more meaningful."</em></p>
+		<p class="textright"> -Jane Doe <br> CA, San Diego</p>
+  </div>
+
+	<div id="footer">
+	</div>
+</div> <!-- end wrapper -->
+
+<!-- Back to Top -->
+<div id="backtotop">
+	<a href = "#banner">
+	<img src = "images/scissors_1.png"
+	 width = "60px" height = "118px"
+	 alt = "Scissors - Back to Top" title = "Back to Top">
+	</a>
+</div>
+
+<!-- copyright footer -->
+<div id="copyrightarea">
+	<div align="center">
+		<form method="post" action="mailto:eclairrei@gmail.com" enctype="text/plain">
+			<legend>Enter your email to sign up for our newsletter
+				<input style="border:2px solid black; background-color: #4d4d4d; color: white;"
+				type="text" name="email" size="50">
+				<input style="background-color: #4d4d4d; border:1px solid silver; color: white;
+				 font-weight: bold;" type="submit" value="Join" name="submit button"></legend>
+		</form> <!--form end-->
+
+			<div>
+					Follow us on Social Media:
+				 <a href="https://www.facebook.com/login/" target="_blank"><img src = "images/social_media.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology facebook"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_2.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology twitter"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_3.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology pinterest"></a>
+				 <a href="https://accounts.google.com/login" target="_blank">
+				 <img src = "images/social_media_4.jpg" width = "35px" height = "35px" alt = "social_media" title = "floralology google plus"></a>
+				 <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src = "images/social_media_5.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology instagram"></a>
+		 </div>
+	 </div>
+
+	<hr align="center" size="1" width="60%"	color=#4d4d4d>
+	<p class="smalltext">&copy;  Floralology Artisan Florists. All Rights not Reserved. Jair
+		2016. MAT 125 Project3 Fictional Business.</p>
+</div>
+
+</body>
+</html>

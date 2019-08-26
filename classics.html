@@ -1,0 +1,459 @@
+<!-- Name:  Jair Bacaycay
+     Due:   08/04/16
+     Class: MAT 125
+     Homework: Project3
+     File:  classics    -->
+<!-- Page Description: classics collection -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+		<title>Floralology Shop: Classics Collection</title>
+		<link rel = "stylesheet"
+		 type = "text/css"
+		 href = "styles.css">
+		 <script language="javascript">
+					<!--
+
+					// Copyright 2006-2007 javascript-array.com
+					var timeout = 500;
+					var closetimer = 0;
+					var ddmenuitem = 0;
+
+					// open hidden layer
+					function mopen(id)
+					{
+						// cancel close timer
+						mcancelclosetime();
+
+						// close old layer
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+						// get new layer and show it
+						ddmenuitem = document.getElementById(id);
+						ddmenuitem.style.visibility = 'visible';
+					}
+
+					// close showed layer
+					function mclose()
+					{
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+					}
+
+					// go close timer
+					function mclosetime()
+					{
+						closetimer = window.setTimeout(mclose, timeout);
+					}
+
+					// cancel close timer
+					function mcancelclosetime()
+					{
+						if(closetimer)
+						{
+							window.clearTimeout(closetimer);
+							closetimer = null;
+						}
+					}
+
+					// close layer when click-out
+					document.onclick = mclose;
+					// Stop hiding -->
+			</script>
+	</head>
+
+<body>
+<!-- Company Name & jump link on banner */ -->
+<div id="banner">
+	<a href="index.html"><h1><em>Floralology</em></h1>
+	<p class="redfont">Artisan Florists</p></a>
+</div>
+
+<!-- Linking pages -->
+<ul id="ddm">
+	<table align="center" cellpadding="5" style="padding: 0;">
+	<td> <!-- not sure why <td> shows up as red in view source code -->
+		<li><a href="index.html">Home</a></li>
+		<li><a href="shop.html"
+	        onmouseover="mopen('m1')"
+	        onmouseout="mclosetime()">Shop</a>
+					<div id="m1"
+	          onmouseover="mcancelclosetime()"
+	          onmouseout="mclosetime()">
+	          <a href="classics.html"><span style="color: #da4646">Classics</span></a>
+						<a href="emoting.html">Emoting</a>
+						<a href="wedding.html">Wedding</a>
+						<a href="custom.html">Custom</a>
+					</div>
+		</li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="elements.html">Elements</a></li>
+	</td>
+	</table>
+</ul>
+
+<!-- body start -->
+<div id="wrapper">
+	<!-- Collection Banner -->
+	<h1 class="collectionbanner">Classics Collection</h1>
+	<!-- Classics Headline and text -->
+	<h2>These are Time-Tested and Purposeful Classics</h2>
+	<div id="special">
+		<p>Bouquets from our Classics Collection are crafted to be subtle, versatile,
+		and convey enough meaning to lighten a room and one's spirits--or communicate
+		something important to a special someone.</p>
+  </div>
+	<hr align="center" size="1" width="80%"	color=silver>
+
+	<!-- classics collection table start -->
+	<table cellpadding="10"
+		cellspacing="7"
+		width="1000px">
+		<tr><td rowspan="6">
+			<img src = "images/bouquet_13.jpg"
+			 width = "300px" height = "300px"
+			 alt = "classics-A0s9g" title = "Classics - Quiet Summer Day"
+			 class="collectionpic"></td>
+	  </tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Quiet Summer Day</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Quiet Summer Day</span> is a lovely bouquet
+			with fresh sprigs of eucalyptus offering the feeling of protection,
+			according to the language of flowers, and acacia, which symbolizes friendship.
+			This bouquet imbues a sense of calm and warmth with a dash of refreshing pine.
+			We even love this bouquet's
+			presence at a wedding in the hands of the bride on a quiet summer day.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> A0s9g</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $89.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 2 -->
+		<tr><td rowspan="6">
+			<img src = "images/bouquet_3.jpg"
+			 width = "300px" height = "300px"
+			 alt = "classics-X1kg31" title = "Classics - Verde"
+			 class="collectionpic"></td>
+	  </tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Verde</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Verde</span> is a contrasting bouquet
+			with tart myrtle, sweet-pea and a vegetable complexion. This bouquet works
+			well as a subtle complement to a country home, a subdued room, or in the lady
+			of the house's boudoir.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> X1kg31</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $79.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 3 -->
+		<tr><td rowspan="6">
+			<img src = "images/reynolds-lively-wd109335-bouquet-0156_small.jpg"
+			 width = "300px" height = "300px"
+			 alt = "classics-BK201" title = "Classics - Classicana"
+			 class="collectionpic"></td>
+	  </tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00 ">
+			Classicana</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Classicana</span> is one our most popular
+			standout bouquets: it is glamourous with lush layers of delicate florals
+			and rich dark leaves, yet balanced. The rose petals are lightly brushed
+			with gold glitter which adds a sophistication to the bouquet. This bouquet
+			works well as a gift for special occasions--romantic or otherwise--and
+			even as a main adornment to a soiree.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> BK201</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $129.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 4 -->
+		<tr><td rowspan="6">
+			<img src = "images/bouquet_1.jpg"
+			 width = "300px" height = "300px"
+			 alt = "classics-Kl90ta" title = "Classics - Country Road"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Country Roads</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Country Road</span> has rustic and
+			understated details that make it a welcome addition to a drawing room
+			setting, personal library or dinner table and is reminiscent to the bucolic
+			country life. Lends a sense of calm and simplistically wholesome appeal
+			to any occasion.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> Kl90ta</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $89.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 5-->
+		<tr><td rowspan="6">
+			<img src = "images/olive_1.jpg"
+			 width = "300px" height = "300px"
+			 alt = "classics-P0a0s8" title = "Classics - Peace"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Peace</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Peace</span> has a key use of olive
+			branches, which are unanimously known as a peace symbol. Peace gives off a
+			simplistic sense of care for life and living. Peace can work well at summer
+			parties or paired with Mediterranean decor.  </td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> P0a0s8</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $79.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 6-->
+		<tr><td rowspan="6">
+			<img src = "images/bouquet_4.jpg"
+			 width = "300px" height = "300px"
+			 alt = "classics-Is87ar" title = "Classics - Hatfield Palace"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Hatfield Palace</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Hatfield Palace</span> has a wholesome
+			mix of fruit and rich and light orchids. This bouquet can complement
+			any domestic occasion, location, and event and looks lovely on a tea table.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> Is87ar</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $99.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 7-->
+		<tr><td rowspan="6">
+			<img src = "images/white-bouquet-funeral.jpg"
+			 width = "300px" height = "300px"
+			 alt = "classics-M3so34" title = "Classics - Sepulcher"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Sepulcher</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Sepulcher</span> is a conservative yet
+			modern bouquet that has a reserved attitude for more formal settings while still
+			conveying sincere emotions. The many white roses in the bouquet symbolize
+			respect, innocence, purity and a hope for the future. Depending on the event,
+			this bouquet might mourn the past at a funeral or even look forward to the
+			future with a	place at a wedding.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> M3so34</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $69.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 8-->
+		<tr><td rowspan="6">
+			<img src = "images/bouquet_6.jpg"
+			 width = "300px" height = "300px"
+			 alt = "classics-G29som" title = "Classics - Versailles"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Versailles</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Versailles</span> has a warm, lively and
+			dainty vivacious nature: the softly bright shades of the many poppies
+			make the bouquet bright and young. Versailles is ready for a cheerful party
+			or a celebration of the lighter things in life. This bouquet can bring
+			light to any room--either the party room or empty living rooms.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> G29som</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $119.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 9-->
+		<tr><td rowspan="6">
+			<img src = "images/China-Aster-with-Roses-and-Hydrangeas.jpg"
+			 width = "300px" height = "300px"
+			 alt = "classics-D63131" title = "Classics - Sweet 16"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Sweet 16</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Sweet 16</span> is a fun bouquet
+			that's having a good time.
+			The two-tone color palette poses a nice contrast: the softer pinks are
+			mixed into blue hydrangeas, which represent a boastful nature according to Victorian
+			tradition, and deep purple chrysanthemums. Sweet 16 can be a great gift
+			for those fun-loving folk or for anyone that wants to add some
+			mirth and youthful mystery to a room.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> D63131</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $99.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 10-->
+		<tr><td rowspan="6">
+			<img src = "images/bouquet_7.jpg"
+			 width = "300px" height = "300px"
+			 alt = "classics-PS610gt" title = "Classics - Hades and Persephone"
+			 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Hades and Persephone</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Hades and Persephone</span> symbolizes
+			the complexity of the two gods according to Greek mythology. Hades, who fell
+			in love with the maiden, Persephone, took her to his realm of
+			the Underworld. The berries in the bouquet symbolize both the sweetness
+			and darkness of Hades, the brother of Zeus, as well as Persephone.
+			Hades and Persephone lends a sense of power and	wondrous mystery to a room.</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Product Code:</span> PS610gt</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Price:</span> $99.99</td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+		<!-- Bouquet 11-->
+		<tr><td rowspan="6">
+		<img src = "images/bouquet_8.jpg"
+		 width = "300px" height = "300px"
+		 alt = "classics-Sp0278" title = "Classics - Galilee"
+		 class="collectionpic"></td>
+		</tr>
+		<tr>
+			<td align="center"><h3 style="margin: 0px;"><span style="color: #004c00">
+			Galilee</span></h3></td>
+		</tr>
+		<tr>
+			<td><span style="color: #d63131">Galilee</span> is a fresh and airy
+			 bouquet, like the waters of its namesake. Galilee gives off a taste of the
+			 untampered natural world and can lighten a room or ones spirits. The
+			 ferns included in the bouquet exudes a fascination for the simplistic and more
+			 organic things of the world.</td>
+		</tr>
+		<tr>
+		<td><span style="color: #d63131">Product Code:</span> Sp0278</td>
+		</tr>
+		<tr>
+		<td><span style="color: #d63131">Price:</span> $89.99</td>
+		</tr>
+		<tr>
+		<td><span style="color: #d63131">Availability:</span> In Stock</td>
+		</tr>
+	</table> <!-- product table end -->
+		<hr align="center" size="1" width="80%"	color=silver>
+	<div id="footer">
+	</div>
+</div>
+
+<!-- Back to Top -->
+<div id="backtotop">
+	<a href = "#banner">
+	<img src = "images/scissors_1.png"
+	 width = "60px" height = "118px"
+	 alt = "Scissors - Back to Top" title = "Back to Top">
+	</a>
+</div>
+
+<!-- copyright footer -->
+<div id="copyrightarea">
+	<div align="center">
+		<form method="post" action="mailto:eclairrei@gmail.com" enctype="text/plain">
+			<legend>Enter your email to sign up for our newsletter
+				<input style="border:2px solid black; background-color: #4d4d4d; color: white;"
+				type="text" name="email" size="50">
+				<input style="background-color: #4d4d4d; border:1px solid silver; color: white;
+				 font-weight: bold;" type="submit" value="Join" name="submit button"></legend>
+		</form> <!--form end-->
+
+			<div>
+					Follow us on Social Media:
+				 <a href="https://www.facebook.com/login/" target="_blank"><img src = "images/social_media.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology facebook"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_2.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology twitter"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_3.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology pinterest"></a>
+				 <a href="https://accounts.google.com/login" target="_blank">
+				 <img src = "images/social_media_4.jpg" width = "35px" height = "35px" alt = "social_media" title = "floralology google plus"></a>
+				 <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src = "images/social_media_5.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology instagram"></a>
+		 </div>
+	 </div>
+
+	<hr align="center" size="1" width="60%"	color=#4d4d4d>
+	<p class="smalltext">&copy;  Floralology Artisan Florists. All Rights not Reserved. Jair
+		2016. MAT 125 Project3 Fictional Business.</p>
+</div>
+
+</body>
+</html>

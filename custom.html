@@ -1,0 +1,240 @@
+<!-- Name:  Jair Bacaycay
+     Due:   08/04/16
+     Class: MAT 125
+     Homework: Project3
+     File:  custom    -->
+<!-- Page Description: custom -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Cinzel+Decorative'>
+		<title>Floralology Shop: Custom</title>
+		<link rel = "stylesheet"
+		 type = "text/css"
+		 href = "styles.css">
+ 	 	<link href="css/lightbox.css" rel="stylesheet" />
+		 <style type="text/css">
+			 /* classes */
+			 .custompicright {
+ 			  background: rgba(192, 192, 192, 0.5);
+ 			  padding:10px;
+ 			  margin:25px 25px 10px 25px ;
+ 			  height: 300px;
+ 			  width: 300px;
+ 			  float: right; }
+ 			.custompicleft {
+ 			  background: rgba(192, 192, 192, 0.3);
+ 			  padding:10px;
+ 			  margin:25px 25px 10px 25px ;
+ 			  height: 300px;
+ 			  width: 300px;
+ 			  float: left; }
+ 			.customgallery {
+ 			  margin: 20px 10px 20px 300px; /* 300px: 400px sized picture centered in 1000px wrapper */
+ 			  padding: auto; }
+		 </style>
+		 <script src="js/jquery-1.11.0.min.js"></script>
+		 <script src="js/lightbox.min.js"></script>
+
+		 <script language="javascript">
+					<!--
+
+					// Copyright 2006-2007 javascript-array.com
+					var timeout = 500;
+					var closetimer = 0;
+					var ddmenuitem = 0;
+
+					// open hidden layer
+					function mopen(id)
+					{
+						// cancel close timer
+						mcancelclosetime();
+
+						// close old layer
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+						// get new layer and show it
+						ddmenuitem = document.getElementById(id);
+						ddmenuitem.style.visibility = 'visible';
+					}
+
+					// close showed layer
+					function mclose()
+					{
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+					}
+
+					// go close timer
+					function mclosetime()
+					{
+						closetimer = window.setTimeout(mclose, timeout);
+					}
+
+					// cancel close timer
+					function mcancelclosetime()
+					{
+						if(closetimer)
+						{
+							window.clearTimeout(closetimer);
+							closetimer = null;
+						}
+					}
+
+					// close layer when click-out
+					document.onclick = mclose;
+					// Stop hiding -->
+			</script>
+	</head>
+
+<body>
+<!-- Company Name & jump link on banner  -->
+<div id="banner">
+	<a href="index.html"><h1><em>Floralology</em></h1>
+	<p class="redfont">Artisan Florists</p></a>
+</div>
+
+<!-- Linking pages -->
+<ul id="ddm">
+	<table align="center" cellpadding="5" style="padding: 0;">
+	<td> <!-- not sure why <td> shows up as red in view source code -->
+		<li><a href="index.html">Home</a></li>
+		<li><a href="shop.html"
+	        onmouseover="mopen('m1')"
+	        onmouseout="mclosetime()">Shop</a>
+					<div id="m1"
+	          onmouseover="mcancelclosetime()"
+	          onmouseout="mclosetime()">
+	          <a href="classics.html">Classics</a>
+						<a href="emoting.html">Emoting</a>
+						<a href="wedding.html">Wedding</a>
+						<a href="custom.html"><span style="color: #da4646">Custom</span></a>
+					</div>
+		</li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="elements.html">Elements</a></li>
+	</td>
+	</table>
+</ul>
+
+<!-- Main Content -->
+<div id="wrapper">
+	<!-- Collection Banner -->
+	<h1 class="collectionbanner">Custom Collection</h1>
+	<!-- Custom headline and info -->
+
+	<div class="custompicright" >
+		<img src = "images/bouquet_9.jpg"
+		 width = "300px" height = "300px"
+		 alt = "Custom floral design" title = "Custom floral design">
+	</div>
+	<h2>Let's Work Together</h2>
+	<div id="special">
+		<p>We would love to work with you to create personal floral arrangements for
+		any event: a single bouquet for a room or a full room of bouquets.
+		<a href="contact.html">Contact</a> our team and send us a bouquet recipe of florals
+		that you want included and we will start working together to make sure that you get
+		perfectly personalized bouquets that say what you want them so say.</p>
+	</div>
+	<h2>How to Get Started</h2>
+	<div id="special">
+	  <p>Call us at (858) XXX-XXXX to get started right away or <a href="contact.html">email us</a>.
+		Though email will take longer, because of the amount of time it takes to email back and forth,
+		you will be allowed the same freedom over your creation and will also be
+		assigned to one of our specific florists to help you along the way.
+		When you first email us, or call us, we recommend that you let us know what kind
+		of event the flowers will be for. Also, you can describe what style or aesthetic you
+		want your custom bouquets designed with. Feel free to include any specific
+		flower types or names that you want included in your custom bouquets. After
+		you contact us, we will usually respond within a day to begin
+		planning your custom creation and will start providing certain styling tips
+		and advice until you are absolutely ready to order.</p>
+	</div>
+	<div class="custompicleft" >
+		<img src = "images/event-emily-josh-wedding-table.jpg"
+		 width = "300px" height = "300px"
+		 alt = "Custom floral design" title = "Custom floral design">
+	</div>
+	<h2 style="margin-top: 10px;">Pricing</h2>
+	<div id="special">
+	  <p>Floralology custom bouquets can start at $89.99, but the price can differ depending
+		on the types of flowers used and the number of desired bouquets. Shipping
+		is free on all single bouquets. </p>
+	</div>
+
+	<h2>Note:</h2>
+		 <ul>
+			 <li style="padding-left: 22px;"><span style="color: black">If we do not work with certain plant types</span></li>
+			 <li style="padding-left: 22px;"><span style="color: black">or, certain flowers are out of season</span></li>
+		 </ul>
+	<p> it is possible that your custom bouquet
+	will not contain such specific flower types. We will try to let you know prior to
+	shipment and allow you the chance to edit your bouquet design.</p>
+	<br>
+	<h2>See What Custom Bouquets Have Been Designed: </h2>
+
+<!-- lightbox gallery use -->
+	<div align="center" id="boximages">
+	    <a href="images/custom_img_1.jpg" data-lightbox="Custom" data-title="Custom: Event"><img src="images/custom_img_1T.jpg"></a>
+	    <a href="images/custom_img_2.jpg" data-lightbox="Custom" data-title="Custom: Bouquet"><img src="images/custom_img_2T.jpg"></a>
+	    <a href="images/custom_img_3.jpg" data-lightbox="Custom" data-title="Custom: Bouquet"><img src="images/custom_img_3T.jpg"></a>
+	    <a href="images/custom_img_4.jpg" data-lightbox="Custom" data-title="Custom: Bridal Bouquet"><img src="images/custom_img_4T.jpg"></a>
+	    <a href="images/custom_img_5.jpg" data-lightbox="Custom" data-title="Custom: Floral Arrangement"><img src="images/custom_img_5T.jpg"></a>
+	    <a href="images/custom_img_6.jpg" data-lightbox="Custom" data-title="Custom: Bridal Bouquet and Bridesmaid Bouquets"><img src="images/custom_img_6T.jpg"></a>
+	    <a href="images/custom_img_7.jpg" data-lightbox="CustomCustom" data-title="Custom: Bridal Bouquet"><img src="images/custom_img_7T.jpg"></a>
+			<a href="images/custom_img_8.jpg" data-lightbox="Custom" data-title="Custom: Floral Arrangement"><img src="images/custom_img_8T.jpg"></a>
+	    <a href="images/custom_img_9.jpg" data-lightbox="Custom" data-title="Custom: Home Bouquet"><img src="images/custom_img_9T.jpg"></a>
+	    <a href="images/custom_img_10.jpg" data-lightbox="Custom" data-title="Custom: Bouquet"><img src="images/custom_img_10T.jpg"></a>
+	    <a href="images/custom_img_11.jpg" data-lightbox="Custom" data-title="Custom: Large Floral Arrangement"><img src="images/custom_img_11T.jpg"></a>
+	    <a href="images/custom_img_12.jpg" data-lightbox="Custom" data-title="Custom:  Bridal Bouquet"><img src="images/custom_img_12T.jpg"></a>
+	    <a href="images/custom_img_13.jpg" data-lightbox="Custom" data-title="Custom: Bridal Bouquet"><img src="images/custom_img_13T.jpg"></a>
+	    <a href="images/custom_img_14.jpg" data-lightbox="Custom" data-title="Custom: Large Floral Arrangement"><img src="images/custom_img_14T.jpg"></a>
+	</div>
+
+	<div id="footer">
+	</div>
+</div>
+
+<!-- Back to Top -->
+<div id="backtotop">
+	<a href = "#banner">
+	<img src = "images/scissors_1.png"
+	 width = "60px" height = "118px"
+	 alt = "Scissors - Back to Top" title = "Back to Top">
+	</a>
+</div>
+
+<!-- copyright footer -->
+<div id="copyrightarea">
+	<div align="center">
+		<form method="post" action="mailto:eclairrei@gmail.com" enctype="text/plain">
+			<legend>Enter your email to sign up for our newsletter
+				<input style="border:2px solid black; background-color: #4d4d4d; color: white;"
+				type="text" name="email" size="50">
+				<input style="background-color: #4d4d4d; border:1px solid silver; color: white;
+				 font-weight: bold;" type="submit" value="Join" name="submit button"></legend>
+		</form> <!--form end-->
+
+			<div>
+					Follow us on Social Media:
+				 <a href="https://www.facebook.com/login/" target="_blank"><img src = "images/social_media.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology facebook"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_2.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology twitter"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_3.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology pinterest"></a>
+				 <a href="https://accounts.google.com/login" target="_blank">
+				 <img src = "images/social_media_4.jpg" width = "35px" height = "35px" alt = "social_media" title = "floralology google plus"></a>
+				 <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src = "images/social_media_5.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology instagram"></a>
+		 </div>
+	 </div>
+
+	<hr align="center" size="1" width="60%"	color=#4d4d4d>
+	<p class="smalltext">&copy;  Floralology Artisan Florists. All Rights not Reserved. Jair
+		2016. MAT 125 Project3 Fictional Business.</p>
+</div>
+
+</body>
+</html>

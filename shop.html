@@ -1,0 +1,213 @@
+<!-- Name:  Jair Bacaycay
+     Due:   08/04/16
+     Class: MAT 125
+     Homework: Project3
+     File:  shop    -->
+<!-- Page Description: shop: points to collections and provides a brief
+     description of Floralology's Collections -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Cinzel+Decorative'>
+		<title>Floralology - Shop</title>
+		<link rel = "stylesheet"
+		 type = "text/css"
+		 href = "styles.css">
+		 <link href="css/lightbox.css" rel="stylesheet">
+		 <style type="text/css">
+			/* general tag styling */
+			ul {
+					margin: 0;
+					padding: 0; }
+		 </style>
+		 <script src="js/jquery-1.11.0.min.js"></script>
+		 <script src="js/lightbox.min.js"></script>
+		 <script language="javascript">
+					<!--
+
+					// Copyright 2006-2007 javascript-array.com
+					var timeout = 500;
+					var closetimer = 0;
+					var ddmenuitem = 0;
+
+					// open hidden layer
+					function mopen(id)
+					{
+						// cancel close timer
+						mcancelclosetime();
+
+						// close old layer
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+						// get new layer and show it
+						ddmenuitem = document.getElementById(id);
+						ddmenuitem.style.visibility = 'visible';
+					}
+
+					// close showed layer
+					function mclose()
+					{
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+					}
+
+					// go close timer
+					function mclosetime()
+					{
+						closetimer = window.setTimeout(mclose, timeout);
+					}
+
+					// cancel close timer
+					function mcancelclosetime()
+					{
+						if(closetimer)
+						{
+							window.clearTimeout(closetimer);
+							closetimer = null;
+						}
+					}
+
+					// close layer when click-out
+					document.onclick = mclose;
+					// Stop hiding -->
+			</script>
+	</head>
+
+<body>
+<!-- Company Name & jump link on banner  -->
+<div id="banner">
+	<a href="index.html"><h1><em>Floralology</em></h1>
+	<p class="redfont">Artisan Florists</p></a>
+</div>
+
+<!-- Linking pages -->
+<ul id="ddm">
+	<table align="center" cellpadding="5" style="padding: 0;">
+	<td> <!-- not sure why <td> shows up as red in view source code -->
+		<li><a href="index.html">Home</a></li>
+		<li><a href="shop.html"
+	        onmouseover="mopen('m1')"
+	        onmouseout="mclosetime()"><span style="color: #da4646">Shop</span></a>
+					<div id="m1"
+	          onmouseover="mcancelclosetime()"
+	          onmouseout="mclosetime()">
+	          <a href="classics.html">Classics</a>
+						<a href="emoting.html">Emoting</a>
+						<a href="wedding.html">Wedding</a>
+						<a href="custom.html">Custom</a>
+					</div>
+		</li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="elements.html">Elements</a></li>
+	</td>
+	</table>
+</ul>
+
+<!-- Main Content -->
+<div id="wrapper">
+	<!-- Collection Banner -->
+	<h1 class="collectionbanner">Floralology Shop</h1>
+
+	<!-- Floralology Collection navigation  -->
+	<div id="leftcol">
+		<p class="redfont leftcolconfig">Shop:</p>
+		<hr class="leftcolconfig" align="left" size="1" width="150px"	color=silver>
+		<ul>
+		<li><a href="classics.html">Classics</a></li>
+		<li><a href="emoting.html">Emoting</a></li>
+		<li><a href="wedding.html">Wedding</a></li>
+		<li><a href="custom.html">Custom</a></li>
+		</ul>
+		<img src="images/design_3.png" width="190x" height="89px">
+	</div>
+
+	<!-- main content area  -->
+	<div id="maincontent">
+		<h2>About Our Collections</h2>
+		<div id="special">
+			<p>Shop from our ready-to-ship artisan collections of fresh bouquets or let us
+			help you design your own <a href="custom.html">custom</a> bouquet.</p>
+			<p>Each of our specialty collections are designed with care and fit a	certain
+			theme. Our gallery shows a variety of bouquets from our Classics, Emoting
+			and Wedding Collections.</p>
+			<p>Our Classics collection includes a diverse selection
+			of our favorite bouquets that are as perfect as special gifts as they are decorating a table.
+			Our Emoting collection is our original collection that uses the floral significance and meanings
+			from the Victorian language of flowers to let our bouquets speak for themselves. We offer a range
+			of bouquets with specific meanings that ensure that your flowers say what you want them to say for you.
+			Though we would recommend considering working with us to make a specialized custom bridal
+			bouquet that fits the theme of your nuptials, our Wedding collections offers a variety
+			of bouquets ready to be held in the arms of any bride. We also offer a selection of
+		  smaller through larger bridal bouquets and specialty cascading bouquets.  </p>
+		</div>
+
+		<h2>Gallery:</h2>
+		<!-- gallery  -->
+
+		<!-- lightbox gallery use -->
+			<div align="center" id="boximages">
+			    <a href="images/shop_1.jpg" data-lightbox="shop" data-title="Classics Collection: Hatfield Palace"><img src="images/shop_1T.jpg"></a>
+			    <a href="images/shop_2.jpg" data-lightbox="shop" data-title="Custom Collection: Lavender"><img src="images/shop_2T.jpg"></a>
+			    <a href="images/shop_3.jpg" data-lightbox="shop" data-title="Emoting Collection: Hydrangea"><img src="images/shop_3T.jpg"></a>
+			    <a href="images/shop_4.jpg" data-lightbox="shop" data-title="Classics Collection: Galilee"><img src="images/shop_4T.jpg"></a>
+					<a href="images/shop_8.jpg" data-lightbox="shop" data-title="Emoting Collection: Daffodil"><img src="images/shop_8T.jpg"></a>
+			    <a href="images/shop_5.jpg" data-lightbox="shop" data-title="Wedding Collection: Yona"><img src="images/shop_5T.jpg"></a>
+			    <a href="images/shop_6.jpg" data-lightbox="shop" data-title="Custom Collection: Quiet Summer Day"><img src="images/shop_6T.jpg"></a>
+			    <a href="images/shop_7.jpg" data-lightbox="shop" data-title="Wedding Collection: Anatolia"><img src="images/shop_7T.jpg"></a>
+			    <a href="images/shop_9.jpg" data-lightbox="shop" data-title="Classics Collection: Classicana"><img src="images/shop_9T.jpg"></a>
+			    <a href="images/shop_10.jpg" data-lightbox="shop" data-title="Emoting Collection: Flowering Almond"><img src="images/shop_10T.jpg"></a>
+			    <a href="images/custom_img_11.jpg" data-lightbox="shop" data-title="Custom: Large Floral Arrangement"><img src="images/custom_img_11T.jpg"></a>
+			    <a href="images/custom_img_12.jpg" data-lightbox="shop" data-title="Custom: Bridal Bouquet"><img src="images/custom_img_12T.jpg"></a>
+					<a href="images/shop_11.jpg" data-lightbox="shop" data-title="Classics Collection: Peace"><img src="images/shop_11T.jpg"></a>
+			    <a href="images/custom_img_13.jpg" data-lightbox="shop" data-title="Custom: Bridal Bouquet"><img src="images/custom_img_13T.jpg"></a>
+			    <a href="images/custom_img_14.jpg" data-lightbox="shop" data-title="Custom: Large Floral Arrangement"><img src="images/custom_img_14T.jpg"></a>
+			</div>
+</div> <!-- main content -->
+
+	<div id="footer">
+	</div>
+</div> <!-- wrapper end -->
+
+<!-- Back to Top -->
+<div id="backtotop">
+	<a href = "#banner">
+	<img src = "images/scissors_1.png"
+	 width = "60px" height = "118px"
+	 alt = "Scissors - Back to Top" title = "Back to Top">
+	</a>
+</div>
+
+<!-- copyright footer -->
+<div id="copyrightarea">
+	<div align="center">
+		<form method="post" action="mailto:eclairrei@gmail.com" enctype="text/plain">
+			<legend>Enter your email to sign up for our newsletter
+				<input style="border:2px solid black; background-color: #4d4d4d; color: white;"
+				type="text" name="email" size="50">
+				<input style="background-color: #4d4d4d; border:1px solid silver; color: white;
+				 font-weight: bold;" type="submit" value="Join" name="submit button"></legend>
+		</form> <!--form end-->
+
+			<div>
+					Follow us on Social Media:
+				 <a href="https://www.facebook.com/login/" target="_blank"><img src = "images/social_media.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology facebook"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_2.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology twitter"></a>
+				 <a href="https://twitter.com/login?lang=en" target="_blank"><img src = "images/social_media_3.jpg"
+		 		 width = "35px" height = "35px" alt = "social_media" title = "floralology pinterest"></a>
+				 <a href="https://accounts.google.com/login" target="_blank">
+				 <img src = "images/social_media_4.jpg" width = "35px" height = "35px" alt = "social_media" title = "floralology google plus"></a>
+				 <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src = "images/social_media_5.jpg"
+				 width = "35px" height = "35px" alt = "social_media" title = "floralology instagram"></a>
+		 </div>
+	 </div>
+
+	<hr align="center" size="1" width="60%"	color=#4d4d4d>
+	<p class="smalltext">&copy;  Floralology Artisan Florists. All Rights not Reserved. Jair
+		2016. MAT 125 Project3 Fictional Business.</p>
+</div>
+
+</body>
+</html>
